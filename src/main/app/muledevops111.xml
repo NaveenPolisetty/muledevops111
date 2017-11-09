@@ -17,7 +17,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <db:select config-ref="MySQL_Configuration" doc:name="Database">
             <db:parameterized-query><![CDATA[select * from Amount1279]]></db:parameterized-query>
         </db:select>
-        <logger level="INFO" doc:name="Logger"/>
+        <logger message="Successful" level="INFO" doc:name="Logger"/>
         <json:object-to-json-transformer doc:name="Object to JSON"/>
     </flow>
 </mule>
