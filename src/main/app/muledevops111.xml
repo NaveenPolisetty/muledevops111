@@ -14,10 +14,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <context:property-placeholder location="american-${env}.properties"/>
     <flow name="maven-testFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
-        <db:select config-ref="MySQL_Configuration" doc:name="Database">
-            <db:parameterized-query><![CDATA[select * from Amount1279]]></db:parameterized-query>
-        </db:select>
-        <logger message="Successful update" level="INFO" doc:name="Logger"/>
-        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <set-payload value="#['Hello Kian Continuous Deployment Done !!!']" doc:name="Set Payload"/>
     </flow>
 </mule>
