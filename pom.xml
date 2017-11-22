@@ -23,12 +23,11 @@
 				<configuration>
 					<deploymentType>cloudhub</deploymentType>
 					<muleVersion>3.8.5</muleVersion>
-					<username>${cloudhub.username}</username>
-					<password>${cloudhub.password}</password>
+					<username>rahul11</username>
+					<password>Naveen@1996</password>
 					<workerType>Micro</workerType>
 					<redeploy>true</redeploy>
-					<environment>${cloudhub.environment}</environment>
-					
+					<environment>Sandbox</environment>		
 				</configuration>
 				<executions>
 					<execution>
